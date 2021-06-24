@@ -1,6 +1,7 @@
 # slack-notification-action
 
-This action will send alert to your slack channel/PM and additionally mention you.
+This action will alert your slack channel/PM with repo/branch/runner log and mention you.
+
 ![Screen](images/notification.png)
 # Requirements
 First of all you need to create your slack app with these items and use them in ```with``` section of the action.
