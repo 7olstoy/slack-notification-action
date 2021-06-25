@@ -72,7 +72,7 @@ runs:
           }
         EOF
         else
-          curl -X POST ${{ inputs.SLACK_URL }} -H 'Content-type: application/json' --data @- << EOF
+          curl -X POST "${{ inputs.slack-url }}" -H 'Content-type: application/json' --data @- << EOF
           {
             "blocks": [
               {
