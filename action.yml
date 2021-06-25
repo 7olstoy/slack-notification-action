@@ -35,8 +35,7 @@ runs:
       shell: bash
       run: |
         if [[ -z "${{ steps.slack-username-generator.outputs.username }}" || "${{ steps.slack-username-generator.outputs.username }}" == "null" ]]; then
-          echo "Sending alert to @${{ steps.slack-username-generator.outputs.username }} - ${{ steps.committer-email-generator.outputs.email }}"
-          curl -s --no-progress-meter -X POST ${{ inputs.slack-url }} -H 'Content-type: application/json' --data @- << EOF
+          curl -s --no-progress-bar -X POST "${{ inputs.slack-url }}" -H 'Content-type: application/json' --data @- << EOF
           {
             "blocks": [
               {
