@@ -1,5 +1,9 @@
-name: 'Slack Alert'
-description: 'Send alert to slack'
+name: 'Slack notification with mention'
+description: 'Send alert to slack and mention a user'
+author: "Dmitry Tolstoy <@7olstoy>"
+branding:
+  icon: "bell"
+  color: "purple"
 inputs:
   slack-url:
     description: 'Slack URL for webhook'
