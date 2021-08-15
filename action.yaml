@@ -57,7 +57,7 @@ runs:
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "• *Repo*: $GITHUB_REPOSITORY \n• *Git branch*: $GITHUB_REF \n• *Run*: $GITHUB_RUN_NUMBER \n•  *Accused*: $GITHUB_ACTOR"
+                  "text": "• *Repo*: $GITHUB_REPOSITORY \n• *Git branch*: $GITHUB_REF \n• *Run*: $GITHUB_RUN_NUMBER \n• *Accused*: $GITHUB_ACTOR"
                 }
               },
               {
